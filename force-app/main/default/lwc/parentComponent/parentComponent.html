@@ -1,0 +1,16 @@
+<!--
+  @description       : 
+  @author            : VIKASH MUNDARI
+  @group             : 
+  @last modified on  : 06-05-2024
+  @last modified by  : VIKASH MUNDARI
+-->
+<template>
+    <lightning-card title="Parent Component">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Enter message" onchange={handleInputChange}></lightning-input>
+            <lightning-button label="Send to Child" onclick={handleButtonClick}></lightning-button>
+        </div>
+        <c-child-component message={childMessage}></c-child-component>
+    </lightning-card>
+</template>
